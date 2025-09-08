@@ -61,7 +61,7 @@
         <Setter Property="CornerRadius" Value="0" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="Margin" Value="0,0,1,1" />
-        <Setter Property="Shadow"    
+        <Setter Property="Shadow">
             <Shadow
                 Brush="Black"
                 Offset="6,6"
@@ -88,14 +88,6 @@
         <Setter Property="FontAutoScalingEnabled" Value="False" />
     </Style>
 
-    <Style TargetType="Label" x:Key="ResultLabelStyle">
-        <Setter Property="FontSize" Value="28" />
-        <Setter Property="TextColor" Value="White" />
-        <Setter Property="FontFamily" Value="RegularFont" />
-        <Setter Property="LineBreakMode" Value="TailTruncation" />
-        <Setter Property="FontAutoScalingEnabled" Value="False" />
-    </Style>
-    
     <Style TargetType="Label" x:Key="InputBoxLabelStyle">
         <Setter Property="FontSize" Value="32" />
         <Setter Property="TextColor" Value="White" />

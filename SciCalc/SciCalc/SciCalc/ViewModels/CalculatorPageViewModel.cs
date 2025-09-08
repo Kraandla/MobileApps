@@ -1,15 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SciCalc.ViewModels
 {
     [INotifyPropertyChanged]
-    internal class CalculatorPageViewModel
+    internal partial class CalculatorPageViewModel /*: ObservableObject*/
     {
         [ObservableProperty]
         private string inputText = string.Empty;
@@ -39,6 +34,88 @@ namespace SciCalc.ViewModels
                 inputText += ")";
                 isSciOpWaiting = false;
             }
+
+            try
+            {
+                var inputString = NormalizeInputString();
+                var expression = new NCalc.Expression(inputString);
+                var result = expression.Evaluate();
+                calculatedResult = result.ToString();
+            }
+            catch (Exception ex)
+            {
+                calculatedResult = "NaN";
+            }
+        }
+
+        private string NormalizeInputString()
+        {
+            Dictionary<string, string> _opMapper = new()
+            {
+                { "×", "*" },
+                { "÷", "/" },
+                {"SIN", "Sin"},
+                {"COS", "Cos"},
+                {"TAN", "Tan"},
+                {"ASIN", "Asin"},
+                {"ACOS", "Acos"},
+                {"ATAN", "Atan"},
+                {"LOG", "Log"},
+                {"EXP", "Exp" },
+            };
+
+            var retString = inputText;
+
+            foreach (var key in _opMapper.Keys)
+            {
+                retString = retString.Replace(key, _opMapper[key]);
+            }
+
+            return retString;
+        }
+
+        [RelayCommand]
+        private void Backspace()
+        { 
+            if (inputText.Length > 0)
+            {
+                inputText = inputText.Substring(0, inputText.Length - 1);
+            }
+        }
+
+        [RelayCommand]
+        private void NumberInput(string key)
+        {
+            inputText += key;
+        }
+        
+        [RelayCommand]
+        private void MathOperator(string op)
+        {
+            if (isSciOpWaiting)
+            { 
+                inputText += ")";
+                isSciOpWaiting = false;
+            }
+            inputText += $" {op}";
+        }
+
+        [RelayCommand]
+        private void RegionOperator(string op)
+        {
+            if (isSciOpWaiting)
+            {
+                inputText += ")";
+                isSciOpWaiting = false;
+            }
+            inputText += $" {op}";
+        }
+
+        [RelayCommand]
+        private void ScientificOperator(string op)
+        {
+            inputText += $" {op}";
+            isSciOpWaiting = false;
         }
     }
 }
