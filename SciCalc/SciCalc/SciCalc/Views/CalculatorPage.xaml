@@ -353,6 +353,36 @@
             CommandParameter="empty"/>
 
         <!--operator buttons-->
+        <Button
+            Grid.Row="8"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            ZIndex="1"
+            Margin="0"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="="
+            Command="{Binding OperatorButtonCommand}"
+            CommandParameter="empty"/>
+        <Button
+            Grid.Row="6"
+            Grid.RowSpan="2"
+            Grid.Column="3"
+            ZIndex="1"
+            Margin="0"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="-"
+            Command="{Binding OperatorButtonCommand}"
+            CommandParameter="empty"/>
+        <Button
+            Grid.Row="6"
+            Grid.RowSpan="2"
+            Grid.Column="4"
+            ZIndex="1"
+            Margin="0"
+            Style="{StaticResource OperatorButtonStyle}"
+            Text="+"
+            Command="{Binding OperatorButtonCommand}"
+            CommandParameter="empty"/>
 
     </Grid>
 </ContentPage>
