@@ -395,9 +395,9 @@
             Command="{Binding OperatorButtonCommand}"
             CommandParameter="calculate"/>
         <Button
-            Grid.Row="6"
-            Grid.RowSpan="2"
+            Grid.Row="7"
             Grid.Column="3"
+            Grid.ColumnSpan="2"
             ZIndex="1"
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
@@ -406,8 +406,8 @@
             CommandParameter="subtraction"/>
         <Button
             Grid.Row="6"
-            Grid.RowSpan="2"
-            Grid.Column="4"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
             ZIndex="1"
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
