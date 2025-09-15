@@ -351,6 +351,27 @@
             Text="3"
             Command="{Binding NumberButtonCommand}"
             CommandParameter="empty"/>
+        <!--4th row-->
+        <Button
+            Grid.Row="9"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            ZIndex="1"
+            Margin="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="0"
+            Command="{Binding NumberButtonCommand}"
+            CommandParameter="empty"/>
+        
+        <Button
+            Grid.Row="9"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="0"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="."
+            Command="{Binding NumberButtonCommand}"
+            CommandParameter="empty"/>
 
         <!--operator buttons-->
         <Button
