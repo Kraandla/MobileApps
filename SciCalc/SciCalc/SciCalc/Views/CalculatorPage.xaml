@@ -90,7 +90,9 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonSyle}"
-            Text="MEAN"/>
+            Text="MEAN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="MEAN"/>
 
         <Button
             Grid.Row="2"
@@ -98,7 +100,9 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonSyle}"
-            Text="MOD"/>
+            Text="MOD"            
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="MOD"/>
 
         <Button
             Grid.Row="2"
@@ -106,7 +110,9 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonSyle}"
-            Text="STD"/>
+            Text="STD"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="STD"/>
 
         <Button
             Grid.Row="2"
@@ -114,15 +120,19 @@
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonSyle}"
-            Text="VAR"/>
-        
+            Text="VAR"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="VAR"/>
+
         <Button
             Grid.Row="2"
             Grid.Column="4"
             ZIndex="1"
             Margin="6,10,6,4"
             Style="{StaticResource ScientificOperatorButtonSyle}"
-            Text="FACT"/>
+            Text="FACT"           
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="FACT"/>
 
         <!--2nd row-->
         <Button
@@ -276,7 +286,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="7"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberSeven"/>
         <Button
             Grid.Row="6"
             Grid.Column="1"
@@ -285,7 +295,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="8"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberEight"/>
         <Button
             Grid.Row="6"
             Grid.Column="2"
@@ -294,7 +304,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="9"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberNine"/>
         <!--2nd row-->
         <Button
             Grid.Row="7"
@@ -304,7 +314,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="4"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberFour"/>
         <Button
             Grid.Row="7"
             Grid.Column="1"
@@ -313,7 +323,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="5"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberFive"/>
         <Button
             Grid.Row="7"
             Grid.Column="2"
@@ -322,7 +332,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="6"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberSix"/>
         <!--row 3-->
         <Button
             Grid.Row="8"
@@ -332,7 +342,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="1"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberOne"/>
         <Button
             Grid.Row="8"
             Grid.Column="1"
@@ -341,7 +351,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="2"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberTwo"/>
         <Button
             Grid.Row="8"
             Grid.Column="2"
@@ -350,7 +360,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="3"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberTwo"/>
         <!--4th row-->
         <Button
             Grid.Row="9"
@@ -361,7 +371,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="0"
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="numberZero"/>
         
         <Button
             Grid.Row="9"
@@ -371,7 +381,7 @@
             Style="{StaticResource NumberButtonStyle}"
             Text="."
             Command="{Binding NumberButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="period"/>
 
         <!--operator buttons-->
         <Button
@@ -383,7 +393,7 @@
             Style="{StaticResource OperatorButtonStyle}"
             Text="="
             Command="{Binding OperatorButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="calculate"/>
         <Button
             Grid.Row="6"
             Grid.RowSpan="2"
@@ -393,7 +403,7 @@
             Style="{StaticResource OperatorButtonStyle}"
             Text="-"
             Command="{Binding OperatorButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="subtraction"/>
         <Button
             Grid.Row="6"
             Grid.RowSpan="2"
@@ -403,7 +413,7 @@
             Style="{StaticResource OperatorButtonStyle}"
             Text="+"
             Command="{Binding OperatorButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="addition"/>
         <Button
             Grid.Row="8"
             Grid.Column="3"
@@ -413,7 +423,7 @@
             Style="{StaticResource OperatorButtonStyle}"
             Text="×"
             Command="{Binding OperatorButtonCommand}"
-            CommandParameter="empty"/>
+            CommandParameter="multiplication"/>
         
 
     </Grid>
