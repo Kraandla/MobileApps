@@ -23,5 +23,198 @@
             Grid.Row="2"
             Grid.RowSpan="4"
             Grid.ColumnSpan="5"/>
+        
+        <!--Color answer Row-->
+        <BoxView
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            BackgroundColor="#262D37"
+            Grid.Row="1"
+            Grid.ColumnSpan="5"/>
+        
+        <!--Input area-->
+        <Frame
+            HasShadow="False"
+            Padding="6,0,4,0"
+            Margin="12"
+            BorderColor="{StaticResource PrimaryColor}"
+            BackgroundColor="#2C3240"
+            HorizontalOptions="EndAndExpand"
+            VerticalOptions="EndAndExpand"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="5">
+            <Label
+                LineHeight="1.5"
+                VerticalTextAlignment="Center"
+                VerticalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding InputText}" Style="{StaticResource InputBoxLabelStyle}">
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+        </Frame>
+
+        <!--Answer Row-->
+        <Grid
+            ColumnDefinitions="Auto, *"
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="5">
+
+            <Label
+                Text="="
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center"
+                Style="{StaticResource EqualsLabelStyle}"
+                Margin="16,0"/>
+
+            <Label
+                Text="{Binding CalculatedResult, Mode=OneWay}"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center"
+                HorizontalOptions="End"
+                Grid.Column="1"
+                Style="{StaticResource ResultLabelStyle}"
+                Margin="16,0"/>
+        </Grid>
+
+        <!--Scientific operator-->
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="MEAN"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="MOD"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="FACT"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="CE"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="ClearEntry"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="4"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="C"            
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="Clear"/>
+        
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="SIN"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="SIN"/>
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource ScientificOperatorButtonSyle}"
+            Text="COS"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="COS"/>
+        
+         <!--Number buttons-->
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="7"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="8"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="9"/>
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="4"/>
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="5"/>
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="6"/>
+
+        <Button
+            Grid.Row="6"
+            Grid.Column="0"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="1"/>
+        <Button
+            Grid.Row="6"
+            Grid.Column="1"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="2"/>
+        <Button
+            Grid.Row="6"
+            Grid.Column="2"
+            ZIndex="1"
+            Margin="6,10,6,4"
+            Style="{StaticResource NumberButtonStyle}"
+            Text="3"/>
+
     </Grid>
 </ContentPage>
