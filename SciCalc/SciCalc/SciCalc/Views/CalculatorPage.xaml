@@ -402,7 +402,7 @@
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
             Text="-"
-            Command="{Binding OperatorButtonCommand}"
+            Command="{Binding MathOperatorCommand}"
             CommandParameter="subtraction"/>
         <Button
             Grid.Row="6"
@@ -412,7 +412,7 @@
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
             Text="+"
-            Command="{Binding OperatorButtonCommand}"
+            Command="{Binding MathOperatorCommand}"
             CommandParameter="addition"/>
         <Button
             Grid.Row="8"
@@ -421,7 +421,7 @@
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
             Text="×"
-            Command="{Binding OperatorButtonCommand}"
+            Command="{Binding MathOperatorCommand}"
             CommandParameter="multiplication"/>
         <Button
             Grid.Row="8"
@@ -430,7 +430,7 @@
             Margin="0"
             Style="{StaticResource OperatorButtonStyle}"
             Text="÷"
-            Command="{Binding OperatorButtonCommand}"
+            Command="{Binding MathOperatorCommand}"
             CommandParameter="division"/>
         
 
