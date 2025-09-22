@@ -18,20 +18,20 @@ namespace SciCalc.ViewModels
         private void Reset()
         {
             calculatedResult = "0";
-            inputText = string.Empty;
+            InputText = string.Empty;
             isSciOpWaiting = false;
         }
 
         [RelayCommand]
         private void Calculate()
         {
-            if (inputText.Length == 0)
+            if (InputText.Length == 0)
             {
                 return;
             }
             if (isSciOpWaiting)
             {
-                inputText += ")";
+                InputText += ")";
                 isSciOpWaiting = false;
             }
 
@@ -40,11 +40,11 @@ namespace SciCalc.ViewModels
                 var inputString = NormalizeInputString();
                 var expression = new NCalc.Expression(inputString);
                 var result = expression.Evaluate();
-                calculatedResult = result.ToString();
+                CalculatedResult = result.ToString();
             }
             catch (Exception ex)
             {
-                calculatedResult = "NaN";
+                CalculatedResult = "NaN";
             }
         }
 
@@ -64,7 +64,7 @@ namespace SciCalc.ViewModels
                 {"EXP", "Exp" },
             };
 
-            var retString = inputText;
+            var retString = InputText;
 
             foreach (var key in _opMapper.Keys)
             {
@@ -77,16 +77,16 @@ namespace SciCalc.ViewModels
         [RelayCommand]
         private void Backspace()
         { 
-            if (inputText.Length > 0)
+            if (InputText.Length > 0)
             {
-                inputText = inputText.Substring(0, inputText.Length - 1);
+                InputText = InputText.Substring(0, InputText.Length - 1);
             }
         }
 
         [RelayCommand]
         private void NumberInput(string key)
         {
-            inputText += key;
+            InputText += key;
         }
         
         [RelayCommand]
@@ -94,10 +94,10 @@ namespace SciCalc.ViewModels
         {
             if (isSciOpWaiting)
             { 
-                inputText += ")";
+                InputText += ")";
                 isSciOpWaiting = false;
             }
-            inputText += $" {op}";
+            InputText += $" {op}";
         }
 
         [RelayCommand]
