@@ -105,16 +105,16 @@ namespace SciCalc.ViewModels
         {
             if (isSciOpWaiting)
             {
-                inputText += ")";
+                InputText += ")";
                 isSciOpWaiting = false;
             }
-            inputText += $" {op}";
+            InputText += $" {op}";
         }
 
         [RelayCommand]
         private void ScientificOperator(string op)
         {
-            inputText += $" {op}";
+            InputText += $" {op}";
             isSciOpWaiting = false;
         }
     }
