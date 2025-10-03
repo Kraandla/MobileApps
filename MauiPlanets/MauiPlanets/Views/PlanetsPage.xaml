@@ -235,7 +235,12 @@
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-                    
+
+                    <Label 
+                        Style="{StaticResource BaseRegularLabelStyle}"
+                        Margin="0,4,0,0">
+                        Dwarf Planets</Label>
+                        
                     <CollectionView
                         x:Name="lstAllDwarfPlanets"
                         HeightRequest="160"
@@ -276,7 +281,7 @@
 
                                         <Label 
                                             Grid.Row="1"
-                                            Style="{StaticResource AllPlanetHeaderSubtitleStyle}"
+                                            Style="{StaticResource AllDwarfPlanetHeaderSubtitleStyle}"
                                             Text="{Binding Name}"
                                             Margin="0,4,0,0"/>
                                     </Grid>

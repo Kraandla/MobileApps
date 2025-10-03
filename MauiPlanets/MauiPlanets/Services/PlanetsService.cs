@@ -48,8 +48,8 @@ namespace MauiPlanets.Services
                 "At the mean surface level, the atmosphere reaches a temperature " +
                 "of 737 K and a pressure 92 times greater than Earth's at sea level, " +
                 "turning the lowest layer of the atmosphere into a supercritical fluid.",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#fc8d05"),
+                AccentColorEnd = Color.FromArgb("#f2a84d"),
                 Images = new()
                 {
                     "https://solarsystem.nasa.gov/system/feature_items/images/143_Venus-800x600.jpg",

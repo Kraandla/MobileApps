@@ -17,8 +17,8 @@ namespace MauiPlanets.Services
                 "our solar system's ninth planet. But after other astronomers found " +
                 "similar intriguing worlds deeper in the distant Kuiper Belt – the IAU " +
                 "reclassified Pluto as a dwarf planet in 2006.",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#dbbf34"),
+                AccentColorEnd = Color.FromArgb("#f9e26b"),
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.G9ZXwxf83CrCgHRYdKw84gHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=b31e368bc86a213eace29d3e036d36ec997b81c960388a1ca6048dc0fea7b817&ipo=images",
@@ -37,8 +37,8 @@ namespace MauiPlanets.Services
                 "is an oval-shaped dwarf planet that is one of the fastest rotating large " +
                 "objects in our solar system. The fast spin distorts Haumea's shape, making " +
                 "this dwarf planet look like a football.",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#3f3f3f"),
+                AccentColorEnd = Color.FromArgb("#7a7a7a"),
                 Images = new()
                 {
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.MklH37daw3ful711WPwO7wHaEu%3Fcb%3D12%26pid%3DApi&f=1&ipt=794b6cd22072625d01bfdd9d31c10fc8753f9b4687099401ec2a67c8954a9cc1&ipo=images"
@@ -65,8 +65,8 @@ namespace MauiPlanets.Services
                 "\"in honor of the fact that it was discovered just a few days past Easter.\" " +
                 "Before this dwarf planet was confirmed, its provisional name was 2005 FY9. " +
                 "In 2016, NASA’s Hubble Space Telescope spotted a small, dark moon orbiting Makemake.",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#d8662d"),
+                AccentColorEnd = Color.FromArgb("#f4b190"),
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.VJhpNRrxh1ONISb78Ix47AHaGN%3Fcb%3D12%26pid%3DApi&f=1&ipt=b5d827a68c56501812bfbf041df6a3af689bd137cdf4737b6ed035a3cdd2bc70&ipo=images"
@@ -104,8 +104,8 @@ namespace MauiPlanets.Services
                 "Eris's moon is named Dysnomia, the demon goddess of lawlessness and the daughter of Eris." +
                 " This is fitting since the discovery of Eris led to the demotion of Pluto from planet " +
                 "to dwarf planet amidst continuing debate in the science community and the public.\r\n",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#f7993b"),
+                AccentColorEnd = Color.FromArgb("#f4bc84"),
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.kT1dKy6GQ_huAkG5oTJn8gHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=fb159793a0f31b988de9c75175e3beda21a2f2ce5ccca30e7d758574c6685d55&ipo=images"
@@ -125,8 +125,8 @@ namespace MauiPlanets.Services
                 "scientists classified it as a dwarf planet in 2006. " +
                 "When NASA's Dawn arrived in 2015, Ceres became the first dwarf planet " +
                 "to receive a visit from a spacecraft. ",
-                AccentColorStart = Color.FromArgb("#353535"),
-                AccentColorEnd = Color.FromArgb("#8d9098"),
+                AccentColorStart = Color.FromArgb("#898480"),
+                AccentColorEnd = Color.FromArgb("#bab7b4"),
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.4fwqGjL3ykoae5-hPC1dGAHaEc%3Fpid%3DApi&f=1&ipt=2dde556a06c31b3f9601b9d63c77caa5b1dc8d63f396b4a119569dc018340c3e&ipo=images"

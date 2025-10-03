@@ -76,6 +76,11 @@
         <Setter Property="FontSize" Value="12" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
+    
+    <Style TargetType="Label" x:Key="AllDwarfPlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="TextColor" Value="{StaticResource DarkTextColor}" />
+    </Style>
 
 
     <Style TargetType="Label" x:Key="PlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
