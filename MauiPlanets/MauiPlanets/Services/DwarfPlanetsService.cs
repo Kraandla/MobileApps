@@ -21,7 +21,9 @@ namespace MauiPlanets.Services
                 AccentColorEnd = Color.FromArgb("#8d9098"),
                 Images = new()
                 {
-                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.G9ZXwxf83CrCgHRYdKw84gHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=b31e368bc86a213eace29d3e036d36ec997b81c960388a1ca6048dc0fea7b817&ipo=images"
+                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.G9ZXwxf83CrCgHRYdKw84gHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=b31e368bc86a213eace29d3e036d36ec997b81c960388a1ca6048dc0fea7b817&ipo=images",
+                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ck_B5KqlEXZDsxwcZK1m_QHaDN%3Fcb%3D12%26pid%3DApi&f=1&ipt=a6dffbdb201291700ac664a06e96e97c5d70fbacb635b7f0b0b5a3ded5bacf2c&ipo=images",
+                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.gjqmcOlNHmrzva-JMdPWxAHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=af342b656a6963867a256d23ba50cb8d25bbae080009f514b2dbb1aa42063b13&ipo=images"
                 }
             },
             new()
@@ -40,6 +42,7 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.MklH37daw3ful711WPwO7wHaEu%3Fcb%3D12%26pid%3DApi&f=1&ipt=794b6cd22072625d01bfdd9d31c10fc8753f9b4687099401ec2a67c8954a9cc1&ipo=images"
+                  ,"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.xJxkFa8VOY9SmNm7r-nXFgHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=10e0d01a593e3a9ea3f2c231540f84e6420369b1a8c4215807a91b2890b5333c&ipo=images"
                 }
             },
             new()
@@ -67,6 +70,8 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.VJhpNRrxh1ONISb78Ix47AHaGN%3Fcb%3D12%26pid%3DApi&f=1&ipt=b5d827a68c56501812bfbf041df6a3af689bd137cdf4737b6ed035a3cdd2bc70&ipo=images"
+                    ,"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ak1Q8pGQoG9fzLmoQb65oQHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=eb904b364aa028914160287c3aa59e9a42bb639c3ed0cc84977882c91c66e718&ipo=images",
+                    "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.d9lBi9X2u-xQ6j3JtVbZVQHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=c6ef22470ad2434ce936f899645502a72b10f113f4c437b25e4a585fc1ef81f9&ipo=images"
                 }
             },
             new()
@@ -104,6 +109,8 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.kT1dKy6GQ_huAkG5oTJn8gHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=fb159793a0f31b988de9c75175e3beda21a2f2ce5ccca30e7d758574c6685d55&ipo=images"
+                    ,"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.rNul70SEyT0KTEAletPgTAHaE7%3Fcb%3D12%26pid%3DApi&f=1&ipt=18951d6d50b4b579215fc16ce578d954eb6de221c96f3080836bf0a56dc612b3&ipo=images",
+
                 }
             },
             new()
@@ -123,6 +130,8 @@ namespace MauiPlanets.Services
                 Images = new()
                 {
                     "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.4fwqGjL3ykoae5-hPC1dGAHaEc%3Fpid%3DApi&f=1&ipt=2dde556a06c31b3f9601b9d63c77caa5b1dc8d63f396b4a119569dc018340c3e&ipo=images"
+                    ,"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.sCoNHAicVy4EsFuvjlubQAHaEr%3Fcb%3D12%26pid%3DApi&f=1&ipt=cd5081b7f400ed3185e82cf5b6875d235b155c03821a91279bcae6baef06634d&ipo=images"
+                    ,"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.H7R3ugpMsbAFGGoO-NBZ7AHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=8b10d0aad5b950cbece374c7649f137bffba713acbda85fb696610d623a48fe0&ipo=images"
                 }
             },
         };
