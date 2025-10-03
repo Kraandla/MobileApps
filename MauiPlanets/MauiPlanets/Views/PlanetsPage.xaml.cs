@@ -19,13 +19,13 @@ public partial class PlanetsPage : ContentPage
 
 		lstPopularPlanets.ItemsSource = PlanetsService.GetFeaturedPlanets();
 		lstAllPlanets.ItemsSource = PlanetsService.GetAllPlanets();
+		lstAllDwarfPlanets.ItemsSource = DwarfPlanetsService.GetAllDwarfPlanets();
 	}
 
 	async void Planets_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
 	{
 		await Navigation.PushAsync(new PlanetDetailsPage(e.CurrentSelection.First() as Planet));
 	}
-
 
     async void ProfilePic_Clicked(System.Object sender, System.EventArgs e)
 	{

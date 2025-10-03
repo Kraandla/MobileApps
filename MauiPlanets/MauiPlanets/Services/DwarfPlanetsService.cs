@@ -126,20 +126,7 @@ namespace MauiPlanets.Services
                 }
             },
         };
-
-
-        public static List<DwarfPlanet> GetFeaturedPlanets()
-        {
-            var random = new Random();
-            var randomizePlanets = dwarf_planets
-                .OrderBy(item => random.Next());
-
-            return randomizePlanets
-                .Take(2)
-                .ToList();
-        }
-
-        public static List<DwarfPlanet> GetAllPlanets()
+        public static List<DwarfPlanet> GetAllDwarfPlanets()
             => dwarf_planets;
     }
 }
